@@ -1,0 +1,26 @@
+- type: log
+  enabled: true
+  paths:
+    - /Users/tidy/Documents/apache-tomcat8/apache-tomcat-8.5.20-shuniu/logs/info.log.18.07.31.3
+  encoding: utf-8
+  include_lines: ['url']
+  fields:
+    log_type: interface
+  fields_under_root: true
+
+- type: log
+  enabled: true
+  paths:
+    - /Users/tidy/Documents/apache-tomcat8/apache-tomcat-8.5.20-shuniu/logs/info.log.18.07.31.3
+  encoding: utf-8
+  include_lines: ['biz']
+  fields:
+    log_type: biz
+  fields_under_root: true
+
+- type: log
+  enabled: true
+  paths:
+    - /Users/tidy/Documents/apache-tomcat8/apache-tomcat-8.5.20-shuniu/logs/info.log.18.07.31.3
+  encoding: utf-8
+  include_lines: ['^\d{2,4}-\d{1,2}-\d{1,2}']

@@ -1,0 +1,10 @@
+version: "2"
+services:
+  sentinel-dashboard:
+    image: sentinel-dashboard:1.4.0
+    container_name: sentinel-dashboard
+    env_file:
+      - ./env/default.env
+    restart: always
+    ports:
+      - "8848:8848"
