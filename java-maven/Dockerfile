@@ -3,6 +3,8 @@
 #which java -> ~/Documents/docker_env/jdk1.8.0_181
 #which mvn -> ~/Documents/docker_env/apache-maven-3.5.4
 #docker run -d -v ~/Documents/docker_env/jdk1.8.0_181:/usr/local/jdk -v ~/Documents/docker_env/apache-maven-3.5.4:/usr/local/maven --name java_maven java_maven
+#
+#或者使用docker-compose
 FROM centos
 
 ENV JAVA_HOME=/usr/local/jdk

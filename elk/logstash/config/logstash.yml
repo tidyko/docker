@@ -74,7 +74,7 @@
 # Periodically check if the configuration has changed and reload the pipeline
 # This can also be triggered manually through the SIGHUP signal
 #
-config.reload.automatic: true 
+config.reload.automatic: true
 #
 # How often to check if the pipeline configuration has changed (in seconds)
 #
@@ -93,7 +93,7 @@ config.reload.automatic: true
 # ------------ Module Settings ---------------
 # Define modules here.  Modules definitions must be defined as an array.
 # The simple way to see this is to prepend each `name` with a `-`, and keep
-# all associated variables under the `name` they are associated with, and 
+# all associated variables under the `name` they are associated with, and
 # above the next, like this:
 #
 # modules:
@@ -103,7 +103,7 @@ config.reload.automatic: true
 #     var.PLUGINTYPE2.PLUGINNAME1.KEY1: VALUE
 #     var.PLUGINTYPE3.PLUGINNAME3.KEY1: VALUE
 #
-# Module variable names must be in the format of 
+# Module variable names must be in the format of
 #
 # var.PLUGIN_TYPE.PLUGIN_NAME.KEY
 #
@@ -242,5 +242,6 @@ config.reload.automatic: true
 #xpack.management.elasticsearch.ssl.truststore.password: password
 #xpack.management.elasticsearch.ssl.keystore.path: /path/to/file
 #xpack.management.elasticsearch.ssl.keystore.password: password
+#xpack.management.elasticsearch.ssl.verification_mode: certificate
 #xpack.management.elasticsearch.sniffing: false
 #xpack.management.logstash.poll_interval: 5s

@@ -1,0 +1,10 @@
+elk:
+  image: sebp/elk:651
+  ports:
+    - "5601:5601"
+    - "9200:9200"
+    - "5044:5044"
+  volumes:
+    - ~/Documents/docker_env/elasticsearch:/var/lib/elasticsearch
+    - ~/Documents/docker_env/logstash/config:/opt/logstash/config
+    - ~/Documents/docker_env/logstash/conf.d:/etc/logstash/conf.d

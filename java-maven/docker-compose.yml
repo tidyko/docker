@@ -1,0 +1,5 @@
+java_maven:
+  image: java_maven
+  volumes:
+    - ~/Documents/docker_env/jdk1.8.0_181:/usr/local/jdk
+    - ~/Documents/docker_env/apache-maven-3.5.4:/usr/local/maven
